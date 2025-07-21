@@ -23,26 +23,3 @@ Refer to the ERD image below for a visual overview of the schema:
 ![ERD Diagram](ERD_insights_orbe.jpg)
 
 ---
-
-## ⚙️ Database Configuration
-
-The ETL script connects to the following PostgreSQL databases:
-
-```python
-# Source: where nested JSONB rows are stored
-SOURCE_DB = {
-    'dbname': 'orbe_dev',
-    'user': 'postgres',
-    'password': 'Admin0rbE',
-    'host': 'orbe360.ai',
-    'port': '5432',
-}
-
-# Target: normalized relational schema
-TARGET_DB = {
-    'dbname': 'orbe_insights',
-    'user': 'postgres',
-    'password': 'Admin0rbE',
-    'host': 'orbe360.ai',
-    'port': '5432',
-}
